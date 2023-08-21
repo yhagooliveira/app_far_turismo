@@ -1,0 +1,113 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.upper-images,
+.lower-images {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.upper-images {
+  top: 0;
+}
+
+.lower-images {
+  bottom: 0;
+}
+
+
+
+@keyframes floatAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: rgba(29, 240, 255, 0.925);
+}
+
+header {
+  background-color: blue;
+  color: rgb(0, 117, 219);
+}
+
+
+
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  top: 0;
+  width: 100%;
+}
+
+header nav {
+  display: inline-block;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.image-container {
+  float: left;
+  margin-right: 10px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+main{
+  width: 1200px;
+  margin: auto;
+}
+main>div{
+  float: left;
+  background-color: #fff;
+  /* padding: 5px; */
+  margin: 10px;
+}
+main>div>img{
+  width: 300px;
+  height: 200px;
+  margin: 15px;
+  
+}
